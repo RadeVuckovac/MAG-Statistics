@@ -1,0 +1,200 @@
+****** Stream Cipher Results: Frequency Test
+****** File name: E:\50Tests\27\binout.32
+****** Time: Mon Sep 02 10:19:22 2002
+
+Input file: E:\50Tests\27\binout.32
+
+Total bits			: 91728000
+Number of ones (x)		: 45862491
+Expected ones (mean)	: 45864000.0
+Proportion of ones		: 0.5000
+
+Significance probability (p)	: 0.7527
+
+Interpretation.
+Frequency test:
+ - 75.27% of bit streams of length 91728000 will have a number of ones further from the mean of 
+45864000.0 for the hypothesised distribution, than this sample.
+ - This sample satisfies the frequency test.
+
+****** Stream Cipher Results: Binary Derivative Test
+****** File name: E:\50Tests\27\binout.32
+****** Time: Mon Sep 02 10:19:57 2002
+
+Input file: E:\50Tests\27\binout.32
+
+Total bits			: 91728000
+
+1st binary derivative (D1).
+Number of bits		: 91727999
+Number of ones (x)		: 45864338
+Expected ones (mean)	: 45863999.5
+Proportion of ones		: 0.5000
+Significance probability (p)	: 0.9436
+
+2nd binary derivative (D2).
+Number of bits		: 91727998
+Number of ones (x)		: 45866457
+Expected ones (mean)	: 45863999.0
+Proportion of ones		: 0.5000
+Significance probability (p)	: 0.6078
+
+Interpretation.
+First binary derivative:
+ - 94.36% of bit streams of length 91727999 will have a number of ones further from the mean of 
+45863999.5 for the hypothesised distribution, than this sample.
+ - This sample satisfies the frequency test on the first binary derivative.
+
+Second binary derivative:
+ - 60.78% of bit streams of length 91727998 will have a number of ones further from the mean of 
+45863999.0 for the hypothesised distribution, than this sample.
+ - This sample satisfies the frequency test on the second binary derivative.
+
+****** Stream Cipher Results: Change Point Test
+****** File name: E:\50Tests\27\binout.32
+****** Time: Mon Sep 02 10:20:32 2002
+
+Input file: E:\50Tests\27\binout.32
+
+Total bits			: 91728000
+Total ones		: 45862491
+
+Change point		: 84683278
+Number of ones before	: 42340878
+Proportion of ones before	: 0.5000
+Proportion of ones after	: 0.4999
+
+Significance probability (p)	: 1.0000
+
+Interpretation.
+Change point test:
+ - The actual significance probability of the change in the proportion of ones is less than 1.00.
+ - This result indicates there is no significant change in the proportion of ones in the bit stream.  This 
+sample satisfies the change point test.
+
+****** Stream Cipher Results: Subblock Test
+****** File name: E:\50Tests\27\binout.32
+****** Time: Mon Sep 02 10:20:51 2002
+
+Input file: E:\50Tests\27\binout.32
+
+The uniformity test was used.
+
+Total bits			: 91728000
+Subblock size		: 2
+
+Chi-squared value		: 1.3172
+Degrees of freedom		: 3
+
+Significance probability (p)	: 0.7251
+
+Interpretation.
+Uniformity test (subblock size = 2):
+ - 72.51% of all possible streams of length 91728000 will have a distribution of 2-bit subblocks less 
+uniform than this sample shows.
+ - This sample satisfies the subblock test for subblocks of length 2.
+
+****** Stream Cipher Results: Runs Test
+****** File name: E:\50Tests\27\binout.32
+****** Time: Mon Sep 02 10:21:18 2002
+
+Input file: E:\50Tests\27\binout.32
+
+Total bits			: 91728000
+
+Number of runs		: 45864339
+Number of blocks		: 22932170
+Number of gaps		: 22932169
+
+Chi-squared value		: 33.4124
+Degrees of freedom		: 46
+
+Significance probability (p)	: 0.9169
+
+Summary of runs:
+
+Length	#Blocks	#Gaps	#Expected
+1	11465822	11465288	
+11466000
+2	5732784	5732118	5733000
+3	2868225	2868594	2866500
+4	1432993	1432801	1433250
+5	715968	716365	716625
+6	358140	359299	358312
+7	178900	178885	179156
+8	89592	89193	89578
+9	45054	44802	44789
+10	22371	22514	22394
+11	11191	11266	11197
+12	5589	5597	5598
+13	2804	2718	2799
+14	1422	1378	1399
+15	662	672	699
+16	331	356	349
+17	155	161	174
+18	90	84	87
+19	40	46	43
+20	22	13	21
+21	5	14	10
+22	6	2	5
+23	4	3	2
+
+Interpretation.
+Runs test:
+ - 91.69% of bit streams of length 91728000 will have a distribution of run lengths further from the 
+expected distribution than this sample gives.
+ - This sample satisfies the runs distribution test.
+
+****** Stream Cipher Results: Sequence Complexity Test
+****** File name: E:\50Tests\27\binout.32
+****** Time: Mon Sep 02 10:21:34 2002
+
+Input file: E:\50Tests\27\binout.32
+
+Total bits			: 20000
+
+Sequence complexity	: 1434
+
+Threshold value		: 1400
+Mean value		: 1415
+
+Interpretation.
+Sequence compexity test:
+ - This sample stream is considered random based on the sequence complexity test.
+
+****** Stream Cipher Results: Linear Complexity Test
+****** File name: E:\50Tests\27\binout.32
+****** Time: Mon Sep 02 10:22:07 2002
+
+Input file: E:\50Tests\27\binout.32
+
+Total bits			: 20000
+
+Linear complexity		: 10000
+Expected linear complexity	: 10000
+Significance probability (p)	: 0.5000
+
+Number of jumps		: 4958
+Expected number of jumps	: 5000
+Significance probability (p)	: 0.2005
+
+Jump size.
+Chi-squared value		: 9.1758
+Degrees of freedom		: 8
+Significance probability (p)	: 0.3277
+
+Interpretation.
+Linear complexity test:
+ - 50.00% of bit streams of length 20000 will have a linear complexity less than this sample.
+ - This sample satisfies the linear complexity test.
+
+Number of jumps:
+ - 20.05% of bit streams of length 20000 will have a number of jumps in linear complexity less than this 
+sample.
+ - This sample satisfies the test on the number of jumps in linear complexity.
+
+Jump Size:
+ - 32.77% of bit streams of length 20000 will have a jump size distribution further from the expected 
+distribtution than this sample gives.
+ - This sample satisfies the test on the distribution of the linear complexity jump size.
+

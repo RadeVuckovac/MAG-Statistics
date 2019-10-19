@@ -1,0 +1,26 @@
+Files included in kaka:
+
+	read.me		this file
+	binout.c	source file for binout.exe
+	binout.exe 	exe file compiled for DOS
+	key.book	text file which contains 512 bit key
+
+What binout.exe does?
+
+	Reads key from key.book (16 lines, each line one int).
+
+	Generates binout.32 binary file which contains 32 bit unsigned integers.
+	Size is over 10Mb which is requirement for DIEHARD tests and can be used
+	for ENT as well.
+
+	On the end key.book is updated with last sequence of the keys from the generator,
+	which means next time generator will produce different stream.
+
+How to use binout.exe?
+
+	Just type binout and make sure that key.book is in the same directory, after while
+	binout.32 will apear in the directory.
+
+Problems?
+
+	email me on Rade.Vuckovac@student.gu.edu.au

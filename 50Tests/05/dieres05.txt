@@ -1,0 +1,333 @@
+ BIRTHDAY SPACINGS TEST, M= 512 N=2**24 LAMBDA=  2.0000
+           binout.32       using bits  1 to 24 p-value=  .033042
+           binout.32       using bits  2 to 25 p-value=  .229685
+           binout.32       using bits  3 to 26 p-value=  .455623
+           binout.32       using bits  4 to 27 p-value=  .656113
+           binout.32       using bits  5 to 28 p-value=  .352346
+           binout.32       using bits  6 to 29 p-value=  .695474
+           binout.32       using bits  7 to 30 p-value=  .915364
+           binout.32       using bits  8 to 31 p-value=  .481950
+           binout.32       using bits  9 to 32 p-value=  .175176
+   The 9 p-values were
+        .033042   .229685   .455623   .656113   .352346
+        .695474   .915364   .481950   .175176
+  A KSTEST for the 9 p-values yields  .080120
+--------------------------------------------------------------------------------
+           OPERM5 test for file binout.32      
+ chisquare for 99 degrees of freedom=113.245; p-value= .844871
+           OPERM5 test for file binout.32      
+ chisquare for 99 degrees of freedom=110.714; p-value= .802064
+--------------------------------------------------------------------------------
+    Binary rank test for binout.32      
+         Rank test for 31x31 binary matrices:
+        rows from leftmost 31 bits of each 32-bit integer
+      rank   observed  expected (o-e)^2/e  sum
+        28       224     211.4   .748784     .749
+        29      5103    5134.0   .187307     .936
+        30     23183   23103.0   .276695    1.213
+        31     11490   11551.5   .327684    1.540
+  chisquare= 1.540 for 3 d. of f.; p-value= .434313
+    Binary rank test for binout.32      
+         Rank test for 32x32 binary matrices:
+        rows from leftmost 32 bits of each 32-bit integer
+      rank   observed  expected (o-e)^2/e  sum
+        29       211     211.4   .000826     .001
+        30      5103    5134.0   .187307     .188
+        31     23211   23103.0   .504430     .693
+        32     11475   11551.5   .506945    1.200
+  chisquare= 1.200 for 3 d. of f.; p-value= .383588
+--------------------------------------------------------------------------------
+ b-rank test for bits  1 to  8 p=1-exp(-SUM/2)= .56191
+ b-rank test for bits  2 to  9 p=1-exp(-SUM/2)= .55217
+ b-rank test for bits  3 to 10 p=1-exp(-SUM/2)= .40339
+ b-rank test for bits  4 to 11 p=1-exp(-SUM/2)= .08903
+ b-rank test for bits  5 to 12 p=1-exp(-SUM/2)= .37183
+ b-rank test for bits  6 to 13 p=1-exp(-SUM/2)= .16401
+ b-rank test for bits  7 to 14 p=1-exp(-SUM/2)= .63008
+ b-rank test for bits  8 to 15 p=1-exp(-SUM/2)= .90925
+ b-rank test for bits  9 to 16 p=1-exp(-SUM/2)= .92543
+ b-rank test for bits 10 to 17 p=1-exp(-SUM/2)= .67909
+ b-rank test for bits 11 to 18 p=1-exp(-SUM/2)= .65153
+ b-rank test for bits 12 to 19 p=1-exp(-SUM/2)= .55971
+ b-rank test for bits 13 to 20 p=1-exp(-SUM/2)= .65036
+ b-rank test for bits 14 to 21 p=1-exp(-SUM/2)= .22374
+ b-rank test for bits 15 to 22 p=1-exp(-SUM/2)= .02449
+ b-rank test for bits 16 to 23 p=1-exp(-SUM/2)= .51450
+ b-rank test for bits 17 to 24 p=1-exp(-SUM/2)= .98544
+ b-rank test for bits 18 to 25 p=1-exp(-SUM/2)= .40133
+ b-rank test for bits 19 to 26 p=1-exp(-SUM/2)= .75494
+ b-rank test for bits 20 to 27 p=1-exp(-SUM/2)= .32584
+ b-rank test for bits 21 to 28 p=1-exp(-SUM/2)= .15794
+ b-rank test for bits 22 to 29 p=1-exp(-SUM/2)= .89410
+ b-rank test for bits 23 to 30 p=1-exp(-SUM/2)= .72829
+ b-rank test for bits 24 to 31 p=1-exp(-SUM/2)= .14645
+ b-rank test for bits 25 to 32 p=1-exp(-SUM/2)= .22329
+   TEST SUMMARY, 25 tests on 100,000 random 6x8 matrices
+ These should be 25 uniform [0,1] random variables:
+     .561910     .552174     .403393     .089029     .371833
+     .164008     .630078     .909247     .925429     .679092
+     .651526     .559715     .650365     .223740     .024493
+     .514500     .985443     .401329     .754938     .325839
+     .157943     .894104     .728288     .146454     .223295
+   brank test summary for binout.32      
+       The KS test for those 25 supposed UNI's yields
+                    KS p-value= .009989
+--------------------------------------------------------------------------------
+  No. missing words should average  141909. with sigma=428.
+ tst no  1:  141317 missing words,   -1.38 sigmas from mean, p-value= .08319
+ tst no  2:  141983 missing words,     .17 sigmas from mean, p-value= .56833
+ tst no  3:  141602 missing words,    -.72 sigmas from mean, p-value= .23636
+ tst no  4:  141788 missing words,    -.28 sigmas from mean, p-value= .38841
+ tst no  5:  142091 missing words,     .42 sigmas from mean, p-value= .66439
+ tst no  6:  141826 missing words,    -.19 sigmas from mean, p-value= .42282
+ tst no  7:  141940 missing words,     .07 sigmas from mean, p-value= .52857
+ tst no  8:  141931 missing words,     .05 sigmas from mean, p-value= .52019
+ tst no  9:  142126 missing words,     .51 sigmas from mean, p-value= .69366
+ tst no 10:  141930 missing words,     .05 sigmas from mean, p-value= .51926
+ tst no 11:  142396 missing words,    1.14 sigmas from mean, p-value= .87225
+ tst no 12:  141992 missing words,     .19 sigmas from mean, p-value= .57658
+ tst no 13:  142211 missing words,     .70 sigmas from mean, p-value= .75955
+ tst no 14:  143125 missing words,    2.84 sigmas from mean, p-value= .99775
+ tst no 15:  141310 missing words,   -1.40 sigmas from mean, p-value= .08071
+ tst no 16:  141710 missing words,    -.47 sigmas from mean, p-value= .32071
+ tst no 17:  141526 missing words,    -.90 sigmas from mean, p-value= .18523
+ tst no 18:  141988 missing words,     .18 sigmas from mean, p-value= .57292
+ tst no 19:  142375 missing words,    1.09 sigmas from mean, p-value= .86171
+ tst no 20:  141652 missing words,    -.60 sigmas from mean, p-value= .27384
+--------------------------------------------------------------------------------
+    OPSO for binout.32       using bits 23 to 32        141878  -.108  .4570
+    OPSO for binout.32       using bits 22 to 31        141892  -.060  .4762
+    OPSO for binout.32       using bits 21 to 30        141499 -1.415  .0785
+    OPSO for binout.32       using bits 20 to 29        141446 -1.598  .0551
+    OPSO for binout.32       using bits 19 to 28        142368  1.582  .9431
+    OPSO for binout.32       using bits 18 to 27        142563  2.254  .9879
+    OPSO for binout.32       using bits 17 to 26        142037   .440  .6701
+    OPSO for binout.32       using bits 16 to 25        142251  1.178  .8806
+    OPSO for binout.32       using bits 15 to 24        141921   .040  .5161
+    OPSO for binout.32       using bits 14 to 23        141830  -.274  .3922
+    OPSO for binout.32       using bits 13 to 22        141739  -.587  .2785
+    OPSO for binout.32       using bits 12 to 21        141033 -3.022  .0013
+    OPSO for binout.32       using bits 11 to 20        141491 -1.443  .0746
+    OPSO for binout.32       using bits 10 to 19        141813  -.332  .3699
+    OPSO for binout.32       using bits  9 to 18        141810  -.343  .3660
+    OPSO for binout.32       using bits  8 to 17        141954   .154  .5612
+    OPSO for binout.32       using bits  7 to 16        141318 -2.039  .0207
+    OPSO for binout.32       using bits  6 to 15        142039   .447  .6726
+    OPSO for binout.32       using bits  5 to 14        142053   .495  .6898
+    OPSO for binout.32       using bits  4 to 13        141565 -1.187  .1175
+    OPSO for binout.32       using bits  3 to 12        141597 -1.077  .1407
+    OPSO for binout.32       using bits  2 to 11        142091   .626  .7345
+    OPSO for binout.32       using bits  1 to 10        142007   .337  .6319
+    OQSO for binout.32       using bits 28 to 32        141828  -.276  .3914
+    OQSO for binout.32       using bits 27 to 31        142253  1.165  .8780
+    OQSO for binout.32       using bits 26 to 30        142016   .362  .6412
+    OQSO for binout.32       using bits 25 to 29        142129   .745  .7718
+    OQSO for binout.32       using bits 24 to 28        142032   .416  .6612
+    OQSO for binout.32       using bits 23 to 27        141651  -.876  .1906
+    OQSO for binout.32       using bits 22 to 26        141206 -2.384  .0086
+    OQSO for binout.32       using bits 21 to 25        141703  -.699  .2421
+    OQSO for binout.32       using bits 20 to 24        141562 -1.177  .1195
+    OQSO for binout.32       using bits 19 to 23        141526 -1.299  .0969
+    OQSO for binout.32       using bits 18 to 22        142009   .338  .6323
+    OQSO for binout.32       using bits 17 to 21        141737  -.584  .2796
+    OQSO for binout.32       using bits 16 to 20        141604 -1.035  .1503
+    OQSO for binout.32       using bits 15 to 19        142051   .480  .6845
+    OQSO for binout.32       using bits 14 to 18        142012   .348  .6361
+    OQSO for binout.32       using bits 13 to 17        141867  -.143  .4430
+    OQSO for binout.32       using bits 12 to 16        141969   .202  .5802
+    OQSO for binout.32       using bits 11 to 15        142282  1.263  .8968
+    OQSO for binout.32       using bits 10 to 14        141499 -1.391  .0821
+    OQSO for binout.32       using bits  9 to 13        141842  -.228  .4097
+    OQSO for binout.32       using bits  8 to 12        142377  1.585  .9436
+    OQSO for binout.32       using bits  7 to 11        141942   .111  .5441
+    OQSO for binout.32       using bits  6 to 10        141733  -.598  .2750
+    OQSO for binout.32       using bits  5 to  9        142162   .857  .8041
+    OQSO for binout.32       using bits  4 to  8        141914   .016  .5063
+    OQSO for binout.32       using bits  3 to  7        141819  -.306  .3797
+    OQSO for binout.32       using bits  2 to  6        141899  -.035  .4860
+    OQSO for binout.32       using bits  1 to  5        142174   .897  .8152
+     DNA for binout.32       using bits 31 to 32        141899  -.030  .4878
+     DNA for binout.32       using bits 30 to 31        141651  -.762  .2230
+     DNA for binout.32       using bits 29 to 30        142141   .683  .7528
+     DNA for binout.32       using bits 28 to 29        141337 -1.688  .0457
+     DNA for binout.32       using bits 27 to 28        141945   .105  .5419
+     DNA for binout.32       using bits 26 to 27        141927   .052  .5208
+     DNA for binout.32       using bits 25 to 26        141741  -.497  .3098
+     DNA for binout.32       using bits 24 to 25        142087   .524  .6999
+     DNA for binout.32       using bits 23 to 24        142558  1.913  .9722
+     DNA for binout.32       using bits 22 to 23        142432  1.542  .9384
+     DNA for binout.32       using bits 21 to 22        141680  -.676  .2494
+     DNA for binout.32       using bits 20 to 21        142035   .371  .6446
+     DNA for binout.32       using bits 19 to 20        142463  1.633  .9488
+     DNA for binout.32       using bits 18 to 19        142081   .506  .6937
+     DNA for binout.32       using bits 17 to 18        141858  -.151  .4398
+     DNA for binout.32       using bits 16 to 17        141984   .220  .5872
+     DNA for binout.32       using bits 15 to 16        141924   .043  .5173
+     DNA for binout.32       using bits 14 to 15        142275  1.079  .8596
+     DNA for binout.32       using bits 13 to 14        142218   .911  .8187
+     DNA for binout.32       using bits 12 to 13        142219   .913  .8195
+     DNA for binout.32       using bits 11 to 12        142189   .825  .7953
+     DNA for binout.32       using bits 10 to 11        141940   .090  .5360
+     DNA for binout.32       using bits  9 to 10        142228   .940  .8264
+     DNA for binout.32       using bits  8 to  9        141845  -.190  .4247
+     DNA for binout.32       using bits  7 to  8        141911   .005  .5020
+     DNA for binout.32       using bits  6 to  7        141730  -.529  .2984
+     DNA for binout.32       using bits  5 to  6        141744  -.488  .3129
+     DNA for binout.32       using bits  4 to  5        142388  1.412  .9210
+     DNA for binout.32       using bits  3 to  4        141802  -.317  .3758
+     DNA for binout.32       using bits  2 to  3        142216   .905  .8172
+     DNA for binout.32       using bits  1 to  2        142047   .406  .6577
+--------------------------------------------------------------------------------
+   Test results for binout.32      
+ Chi-square with 5^5-5^4=2500 d.of f. for sample size:2560000
+                               chisquare  equiv normal  p-value
+  Results fo COUNT-THE-1's in successive bytes:
+ byte stream for binout.32        2403.52     -1.364      .086219
+ byte stream for binout.32        2460.30      -.561      .287259
+--------------------------------------------------------------------------------
+ Chi-square with 5^5-5^4=2500 d.of f. for sample size: 256000
+                      chisquare  equiv normal  p value
+  Results for COUNT-THE-1's in specified bytes:
+           bits  1 to  8  2448.09      -.734      .231440
+           bits  2 to  9  2496.65      -.047      .481119
+           bits  3 to 10  2502.13       .030      .512041
+           bits  4 to 11  2590.06      1.274      .898601
+           bits  5 to 12  2431.50      -.969      .166355
+           bits  6 to 13  2606.43      1.505      .933856
+           bits  7 to 14  2640.54      1.988      .976568
+           bits  8 to 15  2520.32       .287      .613079
+           bits  9 to 16  2487.55      -.176      .430121
+           bits 10 to 17  2489.03      -.155      .438355
+           bits 11 to 18  2723.38      3.159      .999209
+           bits 12 to 19  2535.13       .497      .690359
+           bits 13 to 20  2545.24       .640      .738856
+           bits 14 to 21  2469.43      -.432      .332730
+           bits 15 to 22  2476.78      -.328      .371319
+           bits 16 to 23  2519.00       .269      .605931
+           bits 17 to 24  2356.77     -2.026      .021405
+           bits 18 to 25  2433.57      -.940      .173733
+           bits 19 to 26  2419.90     -1.133      .128665
+           bits 20 to 27  2476.16      -.337      .368009
+           bits 21 to 28  2444.89      -.779      .217890
+           bits 22 to 29  2515.39       .218      .586161
+           bits 23 to 30  2568.60       .970      .833998
+           bits 24 to 31  2624.79      1.765      .961198
+           bits 25 to 32  2654.66      2.187      .985634
+--------------------------------------------------------------------------------
+           CDPARK: result of ten tests on file binout.32      
+            Of 12,000 tries, the average no. of successes
+                 should be 3523 with sigma=21.9
+            Successes: 3517    z-score:  -.274 p-value: .392053
+            Successes: 3472    z-score: -2.329 p-value: .009936
+            Successes: 3511    z-score:  -.548 p-value: .291865
+            Successes: 3533    z-score:   .457 p-value: .676028
+            Successes: 3506    z-score:  -.776 p-value: .218799
+            Successes: 3499    z-score: -1.096 p-value: .136563
+            Successes: 3524    z-score:   .046 p-value: .518210
+            Successes: 3545    z-score:  1.005 p-value: .842447
+            Successes: 3562    z-score:  1.781 p-value: .962529
+            Successes: 3534    z-score:   .502 p-value: .692266
+ 
+           square size   avg. no.  parked   sample sigma
+             100.            3520.300       24.065
+            KSTEST for the above 10: p=  .017639
+--------------------------------------------------------------------------------
+               This is the MINIMUM DISTANCE test
+              for random integers in the file binout.32      
+     Sample no.    d^2     avg     equiv uni            
+           5     .0250    .3856     .024832
+          10     .3354    .6858     .286166
+          15     .5399    .7175     .418754
+          20     .9558    .8408     .617326
+          25    1.0367    .7967     .647220
+          30     .1937    .8454     .176913
+          35     .3716    .7901     .311664
+          40    1.4645    .8803     .770501
+          45    2.7240    .8958     .935278
+          50     .2932    .8465     .255197
+          55     .5103    .8707     .401195
+          60    1.0718    .8580     .659459
+          65     .3566    .8136     .301195
+          70     .5573    .8400     .428838
+          75     .8829    .9005     .588247
+          80     .0317    .9240     .031364
+          85     .9583    .9678     .618292
+          90     .2671    .9276     .235419
+          95     .1786    .9110     .164269
+         100    1.4194    .8998     .759850
+     MINIMUM DISTANCE TEST for binout.32      
+          Result of KS test on 20 transformed mindist^2's:
+                                  p-value= .682536
+--------------------------------------------------------------------------------
+               The 3DSPHERES test for file binout.32      
+ sample no:  1     r^3=  17.561     p-value= .44311
+ sample no:  2     r^3=   7.910     p-value= .23176
+ sample no:  3     r^3=  43.418     p-value= .76478
+ sample no:  4     r^3=  24.828     p-value= .56290
+ sample no:  5     r^3=  85.922     p-value= .94296
+ sample no:  6     r^3=   4.051     p-value= .12630
+ sample no:  7     r^3=   8.110     p-value= .23688
+ sample no:  8     r^3=  27.369     p-value= .59840
+ sample no:  9     r^3=   9.153     p-value= .26295
+ sample no: 10     r^3=  11.896     p-value= .32735
+ sample no: 11     r^3=  34.086     p-value= .67896
+ sample no: 12     r^3=  77.381     p-value= .92418
+ sample no: 13     r^3=  33.662     p-value= .67440
+ sample no: 14     r^3= 149.234     p-value= .99309
+ sample no: 15     r^3=   6.129     p-value= .18480
+ sample no: 16     r^3=   3.467     p-value= .10913
+ sample no: 17     r^3=  38.567     p-value= .72351
+ sample no: 18     r^3=  32.478     p-value= .66129
+ sample no: 19     r^3=  18.124     p-value= .45346
+ sample no: 20     r^3=  82.799     p-value= .93671
+       3DSPHERES test for file binout.32            p-value= .283699
+--------------------------------------------------------------------------------
+            RESULTS OF SQUEEZE TEST FOR binout.32      
+         Table of standardized frequency counts
+     ( (obs-exp)/sqrt(exp) )^2
+        for j taking values <=6,7,8,...,47,>=48:
+     -.8     -.3     -.8     -.8      .1    -1.6
+     -.7     -.2     1.7     -.5     -.2      .1
+     -.1     1.3     -.5      .1      .0     -.9
+     1.2      .6     -.9     -.4    -1.2     -.4
+     -.5      .9     1.4     -.1      .8      .7
+      .0     -.8      .6    -1.8     2.6     1.1
+     -.7    -1.0      .5     -.7    -1.3    -1.0
+    -1.1
+           Chi-square with 42 degrees of freedom: 38.261
+              z-score=  -.408  p-value= .363914
+______________________________________________________________
+--------------------------------------------------------------------------------
+                Test no.  1      p-value  .370466
+                Test no.  2      p-value  .120419
+                Test no.  3      p-value  .096926
+                Test no.  4      p-value  .707396
+                Test no.  5      p-value  .788333
+                Test no.  6      p-value  .360939
+                Test no.  7      p-value  .070361
+                Test no.  8      p-value  .518912
+                Test no.  9      p-value  .734260
+                Test no. 10      p-value  .134312
+   Results of the OSUM test for binout.32      
+        KSTEST on the above 10 p-values:  .676708
+--------------------------------------------------------------------------------
+           The RUNS test for file binout.32      
+     Up and down runs in a sample of 10000
+_________________________________________________ 
+                 Run test for binout.32      :
+       runs up; ks test for 10 p's: .465695
+     runs down; ks test for 10 p's: .750265
+                 Run test for binout.32      :
+       runs up; ks test for 10 p's: .994161
+     runs down; ks test for 10 p's: .229994
+--------------------------------------------------------------------------------
+                Results of craps test for binout.32      
+  No. of wins:  Observed Expected
+                                98696    98585.86
+ Chisq=  24.92 for 20 degrees of freedom, p=  .79556
+               Throws Observed Expected  Chisq     Sum
+            SUMMARY  FOR binout.32      
+                p-value for no. of wins: .688857
+                p-value for throws/game: .795563
+  Test completed.  File binout.32      
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

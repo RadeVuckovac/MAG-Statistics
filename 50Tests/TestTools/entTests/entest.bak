@@ -1,0 +1,12 @@
+Duplicate file name.
+ent --  Calculate entropy of file.  Call
+        with ent [options] [input-file]
+
+        Options:   -b   Treat input as a stream of bits
+                   -c   Print occurrence counts
+                   -f   Fold upper to lower case letters
+                   -u   Print this message
+
+By John Walker
+   http://www.fourmilab.ch/
+   October 20th, 1998

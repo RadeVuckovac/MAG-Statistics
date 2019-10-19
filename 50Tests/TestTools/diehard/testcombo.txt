@@ -1,0 +1,333 @@
+ BIRTHDAY SPACINGS TEST, M= 512 N=2**24 LAMBDA=  2.0000
+           combo.32        using bits  1 to 24 p-value=  .691001
+           combo.32        using bits  2 to 25 p-value=  .175456
+           combo.32        using bits  3 to 26 p-value=  .380668
+           combo.32        using bits  4 to 27 p-value=  .273120
+           combo.32        using bits  5 to 28 p-value=  .213714
+           combo.32        using bits  6 to 29 p-value=  .781860
+           combo.32        using bits  7 to 30 p-value=  .911352
+           combo.32        using bits  8 to 31 p-value=  .715091
+           combo.32        using bits  9 to 32 p-value=  .023918
+   The 9 p-values were
+        .691001   .175456   .380668   .273120   .213714
+        .781860   .911352   .715091   .023918
+  A KSTEST for the 9 p-values yields  .077915
+--------------------------------------------------------------------------------
+           OPERM5 test for file combo.32       
+ chisquare for 99 degrees of freedom= 53.759; p-value= .000062
+           OPERM5 test for file combo.32       
+ chisquare for 99 degrees of freedom= 72.378; p-value= .020422
+--------------------------------------------------------------------------------
+    Binary rank test for combo.32       
+         Rank test for 31x31 binary matrices:
+        rows from leftmost 31 bits of each 32-bit integer
+      rank   observed  expected (o-e)^2/e  sum
+        28       213     211.4   .011838     .012
+        29      5164    5134.0   .175182     .187
+        30     22978   23103.0   .676825     .864
+        31     11645   11551.5   .756410    1.620
+  chisquare= 1.620 for 3 d. of f.; p-value= .446722
+    Binary rank test for combo.32       
+         Rank test for 32x32 binary matrices:
+        rows from leftmost 32 bits of each 32-bit integer
+      rank   observed  expected (o-e)^2/e  sum
+        29       193     211.4  1.604514    1.605
+        30      5103    5134.0   .187307    1.792
+        31     23155   23103.0   .116830    1.909
+        32     11549   11551.5   .000552    1.909
+  chisquare= 1.909 for 3 d. of f.; p-value= .492062
+--------------------------------------------------------------------------------
+ b-rank test for bits  1 to  8 p=1-exp(-SUM/2)= .34077
+ b-rank test for bits  2 to  9 p=1-exp(-SUM/2)= .26554
+ b-rank test for bits  3 to 10 p=1-exp(-SUM/2)= .59828
+ b-rank test for bits  4 to 11 p=1-exp(-SUM/2)= .20416
+ b-rank test for bits  5 to 12 p=1-exp(-SUM/2)= .31687
+ b-rank test for bits  6 to 13 p=1-exp(-SUM/2)= .84641
+ b-rank test for bits  7 to 14 p=1-exp(-SUM/2)= .24784
+ b-rank test for bits  8 to 15 p=1-exp(-SUM/2)= .20082
+ b-rank test for bits  9 to 16 p=1-exp(-SUM/2)= .00301
+ b-rank test for bits 10 to 17 p=1-exp(-SUM/2)= .06586
+ b-rank test for bits 11 to 18 p=1-exp(-SUM/2)= .84829
+ b-rank test for bits 12 to 19 p=1-exp(-SUM/2)= .33670
+ b-rank test for bits 13 to 20 p=1-exp(-SUM/2)= .08318
+ b-rank test for bits 14 to 21 p=1-exp(-SUM/2)= .08300
+ b-rank test for bits 15 to 22 p=1-exp(-SUM/2)= .32433
+ b-rank test for bits 16 to 23 p=1-exp(-SUM/2)= .55592
+ b-rank test for bits 17 to 24 p=1-exp(-SUM/2)= .85860
+ b-rank test for bits 18 to 25 p=1-exp(-SUM/2)= .18023
+ b-rank test for bits 19 to 26 p=1-exp(-SUM/2)= .66471
+ b-rank test for bits 20 to 27 p=1-exp(-SUM/2)= .33629
+ b-rank test for bits 21 to 28 p=1-exp(-SUM/2)= .10520
+ b-rank test for bits 22 to 29 p=1-exp(-SUM/2)= .66774
+ b-rank test for bits 23 to 30 p=1-exp(-SUM/2)= .59036
+ b-rank test for bits 24 to 31 p=1-exp(-SUM/2)= .61250
+ b-rank test for bits 25 to 32 p=1-exp(-SUM/2)= .31064
+   TEST SUMMARY, 25 tests on 100,000 random 6x8 matrices
+ These should be 25 uniform [0,1] random variables:
+     .340766     .265540     .598277     .204162     .316868
+     .846411     .247839     .200819     .003011     .065860
+     .848291     .336697     .083178     .083001     .324333
+     .555921     .858602     .180225     .664708     .336286
+     .105202     .667741     .590360     .612499     .310636
+   brank test summary for combo.32       
+       The KS test for those 25 supposed UNI's yields
+                    KS p-value= .935835
+--------------------------------------------------------------------------------
+  No. missing words should average  141909. with sigma=428.
+ tst no  1:  142242 missing words,     .78 sigmas from mean, p-value= .78150
+ tst no  2:  141274 missing words,   -1.48 sigmas from mean, p-value= .06885
+ tst no  3:  142266 missing words,     .83 sigmas from mean, p-value= .79768
+ tst no  4:  140986 missing words,   -2.16 sigmas from mean, p-value= .01549
+ tst no  5:  141811 missing words,    -.23 sigmas from mean, p-value= .40915
+ tst no  6:  141902 missing words,    -.02 sigmas from mean, p-value= .49317
+ tst no  7:  141191 missing words,   -1.68 sigmas from mean, p-value= .04664
+ tst no  8:  142259 missing words,     .82 sigmas from mean, p-value= .79303
+ tst no  9:  141944 missing words,     .08 sigmas from mean, p-value= .53228
+ tst no 10:  141267 missing words,   -1.50 sigmas from mean, p-value= .06671
+ tst no 11:  141814 missing words,    -.22 sigmas from mean, p-value= .41187
+ tst no 12:  141807 missing words,    -.24 sigmas from mean, p-value= .40552
+ tst no 13:  142154 missing words,     .57 sigmas from mean, p-value= .71622
+ tst no 14:  141628 missing words,    -.66 sigmas from mean, p-value= .25549
+ tst no 15:  141784 missing words,    -.29 sigmas from mean, p-value= .38483
+ tst no 16:  142643 missing words,    1.71 sigmas from mean, p-value= .95675
+ tst no 17:  141834 missing words,    -.18 sigmas from mean, p-value= .43015
+ tst no 18:  142074 missing words,     .38 sigmas from mean, p-value= .64979
+ tst no 19:  142537 missing words,    1.47 sigmas from mean, p-value= .92875
+ tst no 20:  142081 missing words,     .40 sigmas from mean, p-value= .65583
+--------------------------------------------------------------------------------
+    OPSO for combo.32        using bits 23 to 32        142669  2.620  .9956
+    OPSO for combo.32        using bits 22 to 31        142055   .502  .6923
+    OPSO for combo.32        using bits 21 to 30        142139   .792  .7858
+    OPSO for combo.32        using bits 20 to 29        142267  1.233  .8913
+    OPSO for combo.32        using bits 19 to 28        142423  1.771  .9617
+    OPSO for combo.32        using bits 18 to 27        142290  1.313  .9054
+    OPSO for combo.32        using bits 17 to 26        141783  -.436  .3316
+    OPSO for combo.32        using bits 16 to 25        141363 -1.884  .0298
+    OPSO for combo.32        using bits 15 to 24        141994   .292  .6148
+    OPSO for combo.32        using bits 14 to 23        141663  -.849  .1978
+    OPSO for combo.32        using bits 13 to 22        141747  -.560  .2878
+    OPSO for combo.32        using bits 12 to 21        141701  -.718  .2363
+    OPSO for combo.32        using bits 11 to 20        141625  -.980  .1634
+    OPSO for combo.32        using bits 10 to 19        141728  -.625  .2659
+    OPSO for combo.32        using bits  9 to 18        142046   .471  .6813
+    OPSO for combo.32        using bits  8 to 17        141197 -2.456  .0070
+    OPSO for combo.32        using bits  7 to 16        141724  -.639  .2614
+    OPSO for combo.32        using bits  6 to 15        141511 -1.374  .0848
+    OPSO for combo.32        using bits  5 to 14        141437 -1.629  .0517
+    OPSO for combo.32        using bits  4 to 13        142244  1.154  .8758
+    OPSO for combo.32        using bits  3 to 12        141845  -.222  .4122
+    OPSO for combo.32        using bits  2 to 11        142044   .464  .6788
+    OPSO for combo.32        using bits  1 to 10        142428  1.789  .9632
+    OQSO for combo.32        using bits 28 to 32        141747  -.550  .2911
+    OQSO for combo.32        using bits 27 to 31        141556 -1.198  .1155
+    OQSO for combo.32        using bits 26 to 30        141440 -1.591  .0558
+    OQSO for combo.32        using bits 25 to 29        141736  -.588  .2784
+    OQSO for combo.32        using bits 24 to 28        141906  -.011  .4955
+    OQSO for combo.32        using bits 23 to 27        141730  -.608  .2716
+    OQSO for combo.32        using bits 22 to 26        141848  -.208  .4177
+    OQSO for combo.32        using bits 21 to 25        141602 -1.042  .1488
+    OQSO for combo.32        using bits 20 to 24        141932   .077  .5306
+    OQSO for combo.32        using bits 19 to 23        141407 -1.703  .0443
+    OQSO for combo.32        using bits 18 to 22        141819  -.306  .3797
+    OQSO for combo.32        using bits 17 to 21        141627  -.957  .1693
+    OQSO for combo.32        using bits 16 to 20        141794  -.391  .3479
+    OQSO for combo.32        using bits 15 to 19        142312  1.365  .9139
+    OQSO for combo.32        using bits 14 to 18        141862  -.160  .4363
+    OQSO for combo.32        using bits 13 to 17        142269  1.219  .8886
+    OQSO for combo.32        using bits 12 to 16        141777  -.449  .3269
+    OQSO for combo.32        using bits 11 to 15        141913   .012  .5050
+    OQSO for combo.32        using bits 10 to 14        141863  -.157  .4376
+    OQSO for combo.32        using bits  9 to 13        141727  -.618  .2683
+    OQSO for combo.32        using bits  8 to 12        142429  1.762  .9609
+    OQSO for combo.32        using bits  7 to 11        141953   .148  .5588
+    OQSO for combo.32        using bits  6 to 10        142167   .873  .8088
+    OQSO for combo.32        using bits  5 to  9        142159   .846  .8013
+    OQSO for combo.32        using bits  4 to  8        141826  -.282  .3888
+    OQSO for combo.32        using bits  3 to  7        141886  -.079  .4685
+    OQSO for combo.32        using bits  2 to  6        142406  1.684  .9539
+    OQSO for combo.32        using bits  1 to  5        141915   .019  .5077
+     DNA for combo.32        using bits 31 to 32        141559 -1.033  .1507
+     DNA for combo.32        using bits 30 to 31        141906  -.010  .4961
+     DNA for combo.32        using bits 29 to 30        141985   .223  .5883
+     DNA for combo.32        using bits 28 to 29        141997   .259  .6020
+     DNA for combo.32        using bits 27 to 28        141362 -1.615  .0532
+     DNA for combo.32        using bits 26 to 27        141367 -1.600  .0548
+     DNA for combo.32        using bits 25 to 26        141327 -1.718  .0429
+     DNA for combo.32        using bits 24 to 25        141987   .229  .5906
+     DNA for combo.32        using bits 23 to 24        141730  -.529  .2984
+     DNA for combo.32        using bits 22 to 23        141674  -.694  .2438
+     DNA for combo.32        using bits 21 to 22        141730  -.529  .2984
+     DNA for combo.32        using bits 20 to 21        141883  -.078  .4690
+     DNA for combo.32        using bits 19 to 20        141628  -.830  .2033
+     DNA for combo.32        using bits 18 to 19        141548 -1.066  .1432
+     DNA for combo.32        using bits 17 to 18        141379 -1.564  .0589
+     DNA for combo.32        using bits 16 to 17        142193   .837  .7986
+     DNA for combo.32        using bits 15 to 16        141677  -.685  .2466
+     DNA for combo.32        using bits 14 to 15        142088   .527  .7009
+     DNA for combo.32        using bits 13 to 14        141966   .167  .5664
+     DNA for combo.32        using bits 12 to 13        141687  -.656  .2560
+     DNA for combo.32        using bits 11 to 12        142303  1.161  .8772
+     DNA for combo.32        using bits 10 to 11        141588  -.948  .1716
+     DNA for combo.32        using bits  9 to 10        141990   .238  .5940
+     DNA for combo.32        using bits  8 to  9        141846  -.187  .4259
+     DNA for combo.32        using bits  7 to  8        141883  -.078  .4690
+     DNA for combo.32        using bits  6 to  7        142381  1.391  .9179
+     DNA for combo.32        using bits  5 to  6        141757  -.449  .3266
+     DNA for combo.32        using bits  4 to  5        141973   .188  .5745
+     DNA for combo.32        using bits  3 to  4        141842  -.199  .4213
+     DNA for combo.32        using bits  2 to  3        142026   .344  .6346
+     DNA for combo.32        using bits  1 to  2        141264 -1.904  .0285
+--------------------------------------------------------------------------------
+   Test results for combo.32       
+ Chi-square with 5^5-5^4=2500 d.of f. for sample size:2560000
+                               chisquare  equiv normal  p-value
+  Results fo COUNT-THE-1's in successive bytes:
+ byte stream for combo.32         2532.08       .454      .674964
+ byte stream for combo.32         2424.37     -1.070      .142415
+--------------------------------------------------------------------------------
+ Chi-square with 5^5-5^4=2500 d.of f. for sample size: 256000
+                      chisquare  equiv normal  p value
+  Results for COUNT-THE-1's in specified bytes:
+           bits  1 to  8  2479.11      -.295      .383857
+           bits  2 to  9  2453.42      -.659      .255015
+           bits  3 to 10  2474.15      -.366      .357317
+           bits  4 to 11  2617.82      1.666      .952167
+           bits  5 to 12  2498.72      -.018      .492792
+           bits  6 to 13  2475.50      -.346      .364497
+           bits  7 to 14  2484.39      -.221      .412617
+           bits  8 to 15  2482.17      -.252      .400481
+           bits  9 to 16  2589.04      1.259      .896025
+           bits 10 to 17  2517.66       .250      .598603
+           bits 11 to 18  2464.29      -.505      .306785
+           bits 12 to 19  2475.47      -.347      .364325
+           bits 13 to 20  2495.33      -.066      .473696
+           bits 14 to 21  2358.22     -2.005      .022478
+           bits 15 to 22  2350.39     -2.116      .017180
+           bits 16 to 23  2486.64      -.189      .425059
+           bits 17 to 24  2456.08      -.621      .267250
+           bits 18 to 25  2658.05      2.235      .987295
+           bits 19 to 26  2457.12      -.606      .272129
+           bits 20 to 27  2457.77      -.597      .275172
+           bits 21 to 28  2425.69     -1.051      .146635
+           bits 22 to 29  2442.91      -.807      .209711
+           bits 23 to 30  2487.48      -.177      .429725
+           bits 24 to 31  2455.76      -.626      .265777
+           bits 25 to 32  2753.44      3.584      .999831
+--------------------------------------------------------------------------------
+           CDPARK: result of ten tests on file combo.32       
+            Of 12,000 tries, the average no. of successes
+                 should be 3523 with sigma=21.9
+            Successes: 3536    z-score:   .594 p-value: .723613
+            Successes: 3503    z-score:  -.913 p-value: .180558
+            Successes: 3563    z-score:  1.826 p-value: .966111
+            Successes: 3499    z-score: -1.096 p-value: .136563
+            Successes: 3518    z-score:  -.228 p-value: .409702
+            Successes: 3533    z-score:   .457 p-value: .676028
+            Successes: 3508    z-score:  -.685 p-value: .246694
+            Successes: 3494    z-score: -1.324 p-value: .092718
+            Successes: 3474    z-score: -2.237 p-value: .012629
+            Successes: 3544    z-score:   .959 p-value: .831196
+ 
+           square size   avg. no.  parked   sample sigma
+             100.            3517.200       25.365
+            KSTEST for the above 10: p=  .456411
+--------------------------------------------------------------------------------
+               This is the MINIMUM DISTANCE test
+              for random integers in the file combo.32       
+     Sample no.    d^2     avg     equiv uni            
+           5     .4344    .6701     .353730
+          10     .7888    .6420     .547421
+          15     .6558    .6987     .482703
+          20     .7551    .7406     .531807
+          25     .5200    .7976     .407011
+          30    1.2060    .8534     .702417
+          35     .8678    .8503     .581944
+          40     .4264    .8475     .348511
+          45    4.4413    .9466     .988480
+          50     .1221    .9075     .115499
+          55     .4140    .9444     .340386
+          60    1.1552    .9295     .686831
+          65    1.3307    .9227     .737476
+          70     .1641    .9045     .152022
+          75    1.1163    .9166     .674337
+          80     .2484    .9241     .220951
+          85     .0584    .9591     .056970
+          90     .1882    .9490     .172295
+          95     .0428    .9527     .042112
+         100     .8368    .9394     .568714
+     MINIMUM DISTANCE TEST for combo.32       
+          Result of KS test on 20 transformed mindist^2's:
+                                  p-value= .578061
+--------------------------------------------------------------------------------
+               The 3DSPHERES test for file combo.32       
+ sample no:  1     r^3=   6.667     p-value= .19927
+ sample no:  2     r^3=   4.476     p-value= .13861
+ sample no:  3     r^3=  12.089     p-value= .33166
+ sample no:  4     r^3=  14.365     p-value= .38049
+ sample no:  5     r^3=  49.315     p-value= .80676
+ sample no:  6     r^3=  25.144     p-value= .56749
+ sample no:  7     r^3=  33.647     p-value= .67423
+ sample no:  8     r^3=  83.170     p-value= .93748
+ sample no:  9     r^3= 115.114     p-value= .97844
+ sample no: 10     r^3=  23.868     p-value= .54869
+ sample no: 11     r^3=  14.505     p-value= .38337
+ sample no: 12     r^3=   6.068     p-value= .18312
+ sample no: 13     r^3=   8.556     p-value= .24813
+ sample no: 14     r^3=   6.144     p-value= .18519
+ sample no: 15     r^3=  20.572     p-value= .49627
+ sample no: 16     r^3=   9.043     p-value= .26024
+ sample no: 17     r^3=  26.321     p-value= .58412
+ sample no: 18     r^3=   2.247     p-value= .07218
+ sample no: 19     r^3=  20.567     p-value= .49620
+ sample no: 20     r^3=   5.686     p-value= .17265
+       3DSPHERES test for file combo.32             p-value= .651161
+--------------------------------------------------------------------------------
+            RESULTS OF SQUEEZE TEST FOR combo.32       
+         Table of standardized frequency counts
+     ( (obs-exp)/sqrt(exp) )^2
+        for j taking values <=6,7,8,...,47,>=48:
+     -.8     1.3     2.3     -.3     -.7     -.2
+    -1.3      .5    -1.3      .5     -.9     -.4
+     -.7     2.1      .5      .3     -.9     -.4
+     -.3      .7      .5    -1.6     -.5      .6
+      .5     1.9      .3     -.7    -1.3      .8
+      .2     2.2    -1.7    -1.1      .3     -.7
+    -1.6      .2     -.4     -.1     1.6     3.0
+    -1.1
+           Chi-square with 42 degrees of freedom: 55.204
+              z-score=  1.441  p-value= .916868
+______________________________________________________________
+--------------------------------------------------------------------------------
+                Test no.  1      p-value  .570722
+                Test no.  2      p-value  .513205
+                Test no.  3      p-value  .931820
+                Test no.  4      p-value  .559262
+                Test no.  5      p-value  .015631
+                Test no.  6      p-value  .062356
+                Test no.  7      p-value  .786868
+                Test no.  8      p-value  .354335
+                Test no.  9      p-value  .327693
+                Test no. 10      p-value  .258671
+   Results of the OSUM test for combo.32       
+        KSTEST on the above 10 p-values:  .226227
+--------------------------------------------------------------------------------
+           The RUNS test for file combo.32       
+     Up and down runs in a sample of 10000
+_________________________________________________ 
+                 Run test for combo.32       :
+       runs up; ks test for 10 p's: .624152
+     runs down; ks test for 10 p's: .981085
+                 Run test for combo.32       :
+       runs up; ks test for 10 p's: .869643
+     runs down; ks test for 10 p's: .243758
+--------------------------------------------------------------------------------
+                Results of craps test for combo.32       
+  No. of wins:  Observed Expected
+                                98369    98585.86
+ Chisq=  21.70 for 20 degrees of freedom, p=  .64290
+               Throws Observed Expected  Chisq     Sum
+            SUMMARY  FOR combo.32       
+                p-value for no. of wins: .166043
+                p-value for throws/game: .642904
+  Test completed.  File combo.32       
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
